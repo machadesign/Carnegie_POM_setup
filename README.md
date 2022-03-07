@@ -5,7 +5,7 @@ Purpose:
 
 The setup uses the Page Object Model design pattern to allow for improved test case maintenance.
 
-With the configuration.yaml file and config_verification.py file the setup allows testers to easily specify browsers/window sizes/verify browser version being tested against.
+With the configuration.yaml file and config_verification.py file the setup allows testers to easily specify the browsers,headless option, window sizes, and verify browser version being tested against.
 
 
 Project tree 
@@ -41,6 +41,8 @@ HEADLESS: Bool
 SCREEN_SIZE: CUSTOM or FULLSCREEN
 SCREEN_WIDTH: > 0 
 SCREEN_HEIGHT: > 0 
+
+note: Headless option not available for Safari 
 
 1) If a value does not match the specified type or value an error will be thrown and the test will fail to run.
 2) If the entered Browser version does not match the actual browser version for the browser installed the test will fail to run.
