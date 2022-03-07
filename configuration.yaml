@@ -1,0 +1,33 @@
+---
+BROWSER_EXE_PATHS:
+  CHROME: '/Users/matthewchadwell/Desktop/webdrivers/chromedriver'
+  FIREFOX: '/Users/matthewchadwell/Desktop/webdrivers/geckodriver'
+  SAFARI: '/usr/bin/safaridriver'
+
+# Safari - by default testing on browser is off ,needs to be enabled
+BROWSER_PARAMS: ['SAFARI','firefox','mobile_Nexus 5']
+
+BROWSERS:
+  CHROME:
+    BROWSER_VERSION: 96.0.4664.45
+    # Specify the browser versions want to test on ,check the browser version against installed version
+    HEADLESS: False
+    # Specify FULLSCREEN or CUSTOM , if CUSTOM enter a value greater than zero for width and height
+    SCREEN_SIZE: CUSTOM
+    SCREEN_WIDTH: 350
+    SCREEN_HEIGHT: 200
+
+  FIREFOX:
+    BROWSER_VERSION: 0.30.0
+    HEADLESS: False
+    SCREEN_SIZE: CUSTOM
+    SCREEN_WIDTH: 350
+    SCREEN_HEIGHT: 200
+
+  SAFARI:
+  #  HEADLESS: Unavailable for safari
+    BROWSER_VERSION: 13.1.2
+    SCREEN_SIZE: CUSTOM
+    SCREEN_WIDTH: 600
+    SCREEN_HEIGHT: 600
+
